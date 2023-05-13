@@ -30,3 +30,8 @@ sudo mv lein /usr/local/bin/
 # Scripting with Babashka
 
 `bb hello.clj`
+
+## Notes
+- (...) is called a form or expression 
+- Giving names to values is called binding
+- ' will prevent a form from being evaluated
