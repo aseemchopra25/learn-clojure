@@ -1,7 +1,7 @@
 (ns learn-clojure.core)
 
 (def foo 
-  (println "Hello, World!"))
-  
+  (let [l "light"] (println (str "Let there be " l "!"))))
+
 (defn -main []
   foo)
