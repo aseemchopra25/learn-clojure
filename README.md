@@ -40,4 +40,9 @@ sudo mv lein /usr/local/bin/
 - This is called lexical scope
 - let vs def; symbols can also be accessed within the let where it's declared, while symbols declared with def can be accessed from anywhere
 - avoid use of def as much as possible as def introduces state and abusing state makes code difficult to maintain
-- 
+- Functions are first class objects in Clojure, you can do all the basic operations with the object such as passing it to a function, return from a function and bind to a variable etc.
+- fn is used to create a function object
+- #() is the shortcut for fn
+- namespaces organize different clojure objects into logical groups, these logical groups are called library and be used from other namespaces
+- create-ns is used for creating a namespace; though ns macro is more handy
+- in-ns is used to move to a specific namespace
