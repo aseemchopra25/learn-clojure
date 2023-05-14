@@ -35,3 +35,9 @@ sudo mv lein /usr/local/bin/
 - (...) is called a form or expression 
 - Giving names to values is called binding
 - ' will prevent a form from being evaluated
+- Resolution of symbols would be in the scope of the symbol
+- let can be nested, each let will create a scope and symbol resolution is done inside the let where the symbol is resolved
+- This is called lexical scope
+- let vs def; symbols can also be accessed within the let where it's declared, while symbols declared with def can be accessed from anywhere
+- avoid use of def as much as possible as def introduces state and abusing state makes code difficult to maintain
+- 

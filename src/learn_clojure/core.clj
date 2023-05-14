@@ -1,11 +1,12 @@
 (ns learn-clojure.core)
 
-(def foo 
-  (let [l "light"] (println (str "Let there be " l "!"))))
-
-(def foo2
-(let [d "darkness"] (println (str "Let there also be " d "!"))))
+(defn say-hello
+  [name]
+  (println (str "Hello, " name))
+  (let [l "light"
+        d "darkness"]
+    (println (str "Let there be " l))
+    (println (str "Let there also be " d))))
 
 (defn -main []
-  foo
-  foo2)
+  (say-hello "Aseem"))
